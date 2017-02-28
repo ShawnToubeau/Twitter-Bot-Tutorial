@@ -18,11 +18,11 @@ You should note that you need to have a unique phone number associated with the 
 6. Wait an arbitrary amount of time (it's usually been about a week for me, but sometimes much longer) for someone at Twitter Support to manually transfer the key.
 7. Grumble about how there's got to be a better way to do this.
 8. Once you create the account, it'll ask you to fill out a few fields:
-⋅⋅*Name: Whatever you want to call your bot.
-⋅⋅*Description: A short description of what the bot does.
-⋅⋅*Website: I usually just put down my own website or my Github, or the link to the Github repo for the given bot.
-⋅⋅*Callback URL: You can skip this.
-⋅⋅*Check the box to agree to the developer agreement, and click create!
+⋅⋅⋅Name: Whatever you want to call your bot.
+⋅⋅⋅Description: A short description of what the bot does.
+⋅⋅⋅Website: I usually just put down my own website or my Github, or the link to the Github repo for the given bot.
+⋅⋅⋅Callback URL: You can skip this.
+⋅⋅⋅Check the box to agree to the developer agreement, and click create!
 
 Go to the "Permissions" tab and set the access level your application needs. This will probably be "Read and write".
 
