@@ -29,7 +29,7 @@ Go to the "Permissions" tab and set the access level your application needs. Thi
 
 Go to the "Keys and Access Tokens" tab of the application and click the "Create my access token" button under the "Your access token" heading.
 
-##Write the bot! 
+## Write the bot! 
 I've created a very simple bot framework to go along with this tutorial. It will give you the general structure, as well as some simple logging functionality, which I find very useful for debugging purposes.
 
 This tutorial assumes some knowledge of Python. It's also going to assume that your project is structured like so:
@@ -40,7 +40,7 @@ twitter-bot/
 ```
 `bot.py` will hold all the code for the bot. `secrets.py` will store your access keys, and should be added to your `.gitignore` if you're going to be publishing the code. Anyone with access to your keys can read or write from this Twitter account, so you really don't want to make these public.
 
-##Pick your library
+## Pick your library
 If you like making things difficult for yourself, or if you're using a language without a [Twitter library](https://dev.twitter.com/resources/twitter-libraries), then I suppose you can communicate with the [Twitter API](https://dev.twitter.com/rest/public) directly. Otherwise, I'd highly recommend picking one of the many Twitter libraries. My personal favorite is [tweepy](http://www.tweepy.org/), and that's what this tutorial uses.
 
 Install tweepy by running `pip install tweepy` in your terminal. Now you can just `import tweepy` at the top of `bot.py`.
@@ -72,7 +72,7 @@ auth.set_access_token(A_TOKEN, A_TOKEN_SECRET)
 api = tweepy.API(auth) 
 ```
 
-##Create tweets
+## Create tweets
 This bit is somewhat up to you. You'll need to create the content yourse, but I can give you some resources that I've found to be really useful:
 1. News headlines: Guardian API, Google News RSS (needs to be parsed)
 2. HTML parsing: BeautifulSoup
@@ -84,7 +84,7 @@ This bit is somewhat up to you. You'll need to create the content yourse, but I 
 8. Interesting corpora
 9. Other APIs: Mashape
 
-##Post tweets
+## Post tweets
 Once you've got your tweet all together, post it!
 ```python
 api.update_status(tweet)
